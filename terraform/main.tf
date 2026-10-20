@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "repo" {
 
 resource "aws_instance" "ml_server" {
 
-  ami           = "ami-03f4878755434977f"
+  ami           = "ami-006f82a1d5a27da54"
   instance_type = var.instance_type
 
   user_data = file("${path.module}/userdata.sh")
